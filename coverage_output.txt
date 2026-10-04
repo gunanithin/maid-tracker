@@ -1,0 +1,30 @@
+
+ RUN  v2.1.9 /Users/gunanithin/.gemini/antigravity-ide/scratch/maid-tracker
+      Coverage enabled with v8
+
+ ✓ src/store.test.js (6 tests) 5ms
+ ✓ src/views/Settings.test.jsx (8 tests) 126ms
+ ✓ src/views/Calendar.test.jsx (4 tests) 139ms
+ ✓ src/views/Today.test.jsx (7 tests) 132ms
+ ✓ src/App.test.jsx (2 tests) 70ms
+ ✓ src/views/Reports.test.jsx (5 tests) 98ms
+
+ Test Files  6 passed (6)
+      Tests  32 passed (32)
+   Start at  14:18:50
+   Duration  902ms (transform 149ms, setup 315ms, collect 1.19s, tests 569ms, environment 979ms, prepare 333ms)
+
+ % Coverage report from v8
+---------------|---------|----------|---------|---------|-----------------------
+File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s     
+---------------|---------|----------|---------|---------|-----------------------
+All files      |   91.89 |    87.31 |   79.68 |   91.89 |                       
+ src           |   88.48 |    84.74 |     100 |   88.48 |                       
+  App.jsx      |     100 |    94.73 |     100 |     100 | 17                    
+  store.js     |   85.13 |       80 |     100 |   85.13 | ...67-68,70-71,95-109 
+ src/views     |   92.59 |    87.84 |   75.92 |   92.59 |                       
+  Calendar.jsx |     100 |    88.67 |     100 |     100 | 32-33,55-56,72,76     
+  Reports.jsx  |   84.69 |    83.56 |   36.84 |   84.69 | ...82,387-389,470-473 
+  Settings.jsx |   98.04 |    92.85 |     100 |   98.04 | 16-19                 
+  Today.jsx    |   98.38 |    95.74 |   93.33 |   98.38 | 28-30                 
+---------------|---------|----------|---------|---------|-----------------------

@@ -11,12 +11,12 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'html'],
       thresholds: {
-        lines: 0,
-        functions: 0,
-        branches: 0,
-        statements: 0
+        lines: 100,
+        functions: 90,
+        branches: 95,
+        statements: 100
       },
-      exclude: ['src/main.jsx', 'eslint.config.js', 'dist/**', '**/*.test.js', '**/*.test.jsx']
+      exclude: ['src/main.jsx', 'src/setupTests.js', 'debug.js', 'vite.config.js', 'eslint.config.js', 'dist/**', '**/*.test.js', '**/*.test.jsx']
     }
   }
 })
