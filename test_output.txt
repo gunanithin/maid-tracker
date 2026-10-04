@@ -1,0 +1,2093 @@
+
+> maid-tracker@1.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /Users/gunanithin/.gemini/antigravity-ide/scratch/maid-tracker
+
+ ✓ src/store.test.js (6 tests) 4ms
+ ❯ src/views/Settings.test.jsx (8 tests | 1 failed) 111ms
+   × SettingsView Component > toggles working days correctly 25ms
+     → Unable to find an element with the text: Save Settings. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-settings"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"margin-bottom: 24px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mSettings[0m
+        [36m</h1>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0mWorking Days[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-row gap-2"[39m
+          [33mstyle[39m=[32m"justify-content: space-between; margin-bottom: 8px;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mM[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mT[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mW[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mT[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mF[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary); color: white; font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mS[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"width: 36px; height: 36px; border-radius: 50%; background-color: var(--neutral-bg); color: var(--text-muted); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;"[39m
+          [36m>[39m
+            [0mS[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0mExpected Times[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+          [36m>[39m
+            [0mBreakfast[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mtype[39m=[32m"time"[39m
+            [33mvalue[39m=[32m"08:30"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+          [33mstyle[39m=[32m"margin-bottom: 0px;"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+          [36m>[39m
+            [0mLunch[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mtype[39m=[32m"time"[39m
+            [33mvalue[39m=[32m"13:00"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0mRules[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-between"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"form-label"[39m
+            [36m>[39m
+              [0mSunday Holiday[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted);"[39m
+            [36m>[39m
+              [0mTreat Sundays as holidays by default[0m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<input[39m
+            [33mchecked[39m=[32m""[39m
+            [33mstyle[39m=[32m"width: 20px; height: 20px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-between"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"padding-right: 16px;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"form-label"[39m
+            [36m>[39m
+              [0mSunday Compensation[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted);"[39m
+            [36m>[39m
+              [0mMissed Mon-Sat require working on Sun[0m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<input[39m
+            [33mchecked[39m=[32m""[39m
+            [33mstyle[39m=[32m"width: 20px; height: 20px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0mData Backup[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+          [36m>[39m
+            [0mGoogle Sheets Webhook URL[0m
+          [36m</label>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px;"[39m
+          [36m>[39m
+            [0mPaste your Google Apps Script Web App URL here to automatically sync records.[0m
+          [36m</div>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mplaceholder[39m=[32m"https://script.google.com/macros/s/..."[39m
+            [33mtype[39m=[32m"text"[39m
+            [33mvalue[39m=[32m""[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn btn-outline"[39m
+          [33mdisabled[39m=[32m""[39m
+          [33mstyle[39m=[32m"width: 100%; padding: 10px; font-size: 0.9rem;"[39m
+        [36m>[39m
+          [0m⬇️ Sync Data from Google Sheets[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0mShift Configuration[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;"[39m
+        [36m>[39m
+          [0mEnable or rename the shifts you want to track (Breakfast, Lunch, Dinner).[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; flex-direction: column; gap: 12px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; gap: 8px; align-items: center;"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mchecked[39m=[32m""[39m
+              [33mstyle[39m=[32m"width: 18px; height: 18px; flex-shrink: 0;"[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mstyle[39m=[32m"width: 50px; text-align: center; padding: 8px 4px; margin: 0px;"[39m
+              [33mtitle[39m=[32m"Emoji Icon"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"🍳"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mplaceholder[39m=[32m"Shift Name"[39m
+              [33mstyle[39m=[32m"margin: 0px; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"Breakfast"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; gap: 8px; align-items: center;"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mchecked[39m=[32m""[39m
+              [33mstyle[39m=[32m"width: 18px; height: 18px; flex-shrink: 0;"[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mstyle[39m=[32m"width: 50px; text-align: center; padding: 8px 4px; margin: 0px;"[39m
+              [33mtitle[39m=[32m"Emoji Icon"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"🍛"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mplaceholder[39m=[32m"Shift Name"[39m
+              [33mstyle[39m=[32m"margin: 0px; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"Lunch"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; gap: 8px; align-items: center;"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mstyle[39m=[32m"width: 18px; height: 18px; flex-shrink: 0;"[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mstyle[39m=[32m"width: 50px; text-align: center; padding: 8px 4px; margin: 0px;"[39m
+              [33mtitle[39m=[32m"Emoji Icon"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"🍲"[39m
+            [36m/>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input form-input"[39m
+              [33mplaceholder[39m=[32m"Shift Name"[39m
+              [33mstyle[39m=[32m"margin: 0px; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m"Dinner"[39m
+            [36m/>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mstyle[39m=[32m"width: 100%; padding: 14px; font-size: 1rem;"[39m
+      [36m>[39m
+        [0mSettings Saved[0m
+      [36m</button>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+ ❯ src/views/Today.test.jsx (6 tests | 2 failed) 96ms
+   × TodayView Component > renders today view and active shifts 28ms
+     → Unable to find an element with the text: Today. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-today"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 24px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: center; gap: 8px;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 18-6-6 6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; flex-direction: column; align-items: center;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"position: relative; display: inline-block;"[39m
+            [36m>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"title"[39m
+                [33mstyle[39m=[32m"margin-bottom: 0px; text-align: center;"[39m
+              [36m>[39m
+                [0mMonday, Oct 5th[0m
+              [36m</h1>[39m
+              [36m<input[39m
+                [33mmax[39m=[32m"2026-10-05"[39m
+                [33mstyle[39m=[32m"position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0; cursor: pointer;"[39m
+                [33mtype[39m=[32m"date"[39m
+                [33mvalue[39m=[32m"2026-10-05"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"subtitle"[39m
+              [33mstyle[39m=[32m"font-weight: 400; margin-top: 4px;"[39m
+            [36m>[39m
+              [0mDaily Attendance[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+            [33mdisabled[39m=[32m""[39m
+            [33mstyle[39m=[32m"opacity: 0.3;"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 18 6-6-6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0m🍳[0m
+          [0m [0m
+          [0mBreakfast[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"status-grid"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-check lucide-check-circle-2"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m16 9-5.5 5.5L8 12"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCompleted[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-x lucide-x-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 9-6 6"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 9 6 6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mMissed[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn active-na"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-minus lucide-minus-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M8 12h8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mN/A[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0m🍛[0m
+          [0m [0m
+          [0mLunch[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"status-grid"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-check lucide-check-circle-2"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m16 9-5.5 5.5L8 12"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCompleted[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-x lucide-x-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 9-6 6"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 9 6 6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mMissed[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn active-na"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-minus lucide-minus-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M8 12h8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mN/A[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label flex-row gap-2"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-clock"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 6v6l4 2"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Arrival Time[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mtype[39m=[32m"time"[39m
+            [33mvalue[39m=[32m""[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-row gap-2"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<input[39m
+            [33mid[39m=[32m"late-checkbox"[39m
+            [33mstyle[39m=[32m"width: 18px; height: 18px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+            [33mfor[39m=[32m"late-checkbox"[39m
+            [33mstyle[39m=[32m"margin: 0px;"[39m
+          [36m>[39m
+            [0mArrived Late[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-row gap-2"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<input[39m
+            [33mid[39m=[32m"approved-leave"[39m
+            [33mstyle[39m=[32m"width: 18px; height: 18px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+            [33mfor[39m=[32m"approved-leave"[39m
+            [33mstyle[39m=[32m"margin: 0px; color: var(--danger);"[39m
+          [36m>[39m
+            [0mMark as Holiday[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+          [33mstyle[39m=[32m"margin-bottom: 0px;"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label flex-row gap-2"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-file-text"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M14 2v5a1 1 0 0 0 1 1h5"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 9H8"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 13H8"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 17H8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Notes / Reason[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mplaceholder[39m=[32m"Reason for absence or late..."[39m
+            [33mtype[39m=[32m"text"[39m
+            [33mvalue[39m=[32m""[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"text-align: center; margin-top: 24px; color: var(--text-muted); font-size: 0.85rem;"[39m
+      [36m>[39m
+        [0mStatus is saved automatically.[0m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+   × TodayView Component > navigates days back and forward 17ms
+     → Unable to find an element with the text: Today. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-today"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 24px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: center; gap: 8px;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 18-6-6 6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; flex-direction: column; align-items: center;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"position: relative; display: inline-block;"[39m
+            [36m>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"title"[39m
+                [33mstyle[39m=[32m"margin-bottom: 0px; text-align: center;"[39m
+              [36m>[39m
+                [0mMonday, Oct 5th[0m
+              [36m</h1>[39m
+              [36m<input[39m
+                [33mmax[39m=[32m"2026-10-05"[39m
+                [33mstyle[39m=[32m"position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0; cursor: pointer;"[39m
+                [33mtype[39m=[32m"date"[39m
+                [33mvalue[39m=[32m"2026-10-05"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"subtitle"[39m
+              [33mstyle[39m=[32m"font-weight: 400; margin-top: 4px;"[39m
+            [36m>[39m
+              [0mDaily Attendance[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+            [33mdisabled[39m=[32m""[39m
+            [33mstyle[39m=[32m"opacity: 0.3;"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 18 6-6-6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0m🍳[0m
+          [0m [0m
+          [0mBreakfast[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"status-grid"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-check lucide-check-circle-2"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m16 9-5.5 5.5L8 12"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCompleted[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-x lucide-x-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 9-6 6"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 9 6 6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mMissed[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn active-na"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-minus lucide-minus-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M8 12h8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mN/A[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+        [36m>[39m
+          [0m🍛[0m
+          [0m [0m
+          [0mLunch[0m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"status-grid"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-check lucide-check-circle-2"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m16 9-5.5 5.5L8 12"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCompleted[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn "[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-x lucide-x-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 9-6 6"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 9 6 6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mMissed[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"status-btn active-na"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-circle-minus lucide-minus-circle"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"20"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"20"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M8 12h8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mN/A[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label flex-row gap-2"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-clock"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"12"[39m
+                [33mcy[39m=[32m"12"[39m
+                [33mr[39m=[32m"10"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 6v6l4 2"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Arrival Time[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mtype[39m=[32m"time"[39m
+            [33mvalue[39m=[32m""[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-row gap-2"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<input[39m
+            [33mid[39m=[32m"late-checkbox"[39m
+            [33mstyle[39m=[32m"width: 18px; height: 18px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+            [33mfor[39m=[32m"late-checkbox"[39m
+            [33mstyle[39m=[32m"margin: 0px;"[39m
+          [36m>[39m
+            [0mArrived Late[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-row gap-2"[39m
+          [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+        [36m>[39m
+          [36m<input[39m
+            [33mid[39m=[32m"approved-leave"[39m
+            [33mstyle[39m=[32m"width: 18px; height: 18px;"[39m
+            [33mtype[39m=[32m"checkbox"[39m
+          [36m/>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label"[39m
+            [33mfor[39m=[32m"approved-leave"[39m
+            [33mstyle[39m=[32m"margin: 0px; color: var(--danger);"[39m
+          [36m>[39m
+            [0mMark as Holiday[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"form-group"[39m
+          [33mstyle[39m=[32m"margin-bottom: 0px;"[39m
+        [36m>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"form-label flex-row gap-2"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-file-text"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M14 2v5a1 1 0 0 0 1 1h5"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M10 9H8"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 13H8"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 17H8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Notes / Reason[0m
+          [36m</label>[39m
+          [36m<input[39m
+            [33mclass[39m=[32m"form-input"[39m
+            [33mplaceholder[39m=[32m"Reason for absence or late..."[39m
+            [33mtype[39m=[32m"text"[39m
+            [33mvalue[39m=[32m""[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"text-align: center; margin-top: 24px; color: var(--text-muted); font-size: 0.85rem;"[39m
+      [36m>[39m
+        [0mStatus is saved automatically.[0m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+ ❯ src/views/Calendar.test.jsx (4 tests | 2 failed) 137ms
+   × CalendarView Component > renders status indicators for known days 16ms
+     → Found multiple elements with the text: 1
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+[36m>[39m
+  [0m1[0m
+[36m</div>[39m
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33mstyle[39m=[32m"font-size: 1.5rem; font-weight: 700; color: var(--danger);"[39m
+[36m>[39m
+  [0m1[0m
+[36m</div>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-calendar"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 24px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mCalendar[0m
+        [36m</h1>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-between"[39m
+          [33mstyle[39m=[32m"margin-bottom: 20px;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 18-6-6 6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"subtitle"[39m
+            [33mstyle[39m=[32m"margin: 0px; font-size: 1.1rem;"[39m
+          [36m>[39m
+            [0mOctober 2026[0m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 18 6-6-6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; margin-bottom: 8px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mSu[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mMo[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mTu[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mWe[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mTh[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mFr[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mSa[0m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;"[39m
+        [36m>[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: transparent; color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--border); border-style: var(--border); border-color: var(--border);"[39m
+          [36m>[39m
+            [0m2[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--danger-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--danger); border-style: var(--danger); border-color: var(--danger);"[39m
+          [36m>[39m
+            [0m3[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: #f3f4f6; color: var(--text-main); border: 1px solid #d1d5db; box-shadow: none;"[39m
+          [36m>[39m
+            [0m4[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33ms...
+   × CalendarView Component > opens day details modal on click 10ms
+     → Found multiple elements with the text: 1
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+[36m>[39m
+  [0m1[0m
+[36m</div>[39m
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33mstyle[39m=[32m"font-size: 1.5rem; font-weight: 700; color: var(--danger);"[39m
+[36m>[39m
+  [0m1[0m
+[36m</div>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-calendar"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 24px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mCalendar[0m
+        [36m</h1>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"card"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex-between"[39m
+          [33mstyle[39m=[32m"margin-bottom: 20px;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m15 18-6-6 6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"subtitle"[39m
+            [33mstyle[39m=[32m"margin: 0px; font-size: 1.1rem;"[39m
+          [36m>[39m
+            [0mOctober 2026[0m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m9 18 6-6-6-6"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; margin-bottom: 8px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mSu[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mMo[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mTu[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mWe[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mTh[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mFr[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"[39m
+          [36m>[39m
+            [0mSa[0m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;"[39m
+        [36m>[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div />[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: transparent; color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--border); border-style: var(--border); border-color: var(--border);"[39m
+          [36m>[39m
+            [0m2[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--danger-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--danger); border-style: var(--danger); border-color: var(--danger);"[39m
+          [36m>[39m
+            [0m3[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: #f3f4f6; color: var(--text-main); border: 1px solid #d1d5db; box-shadow: none;"[39m
+          [36m>[39m
+            [0m4[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; background-color: var(--success-bg); color: var(--text-main); border: 1px solid; box-shadow: none; border-width: var(--success); border-style: var(--success); border-color: var(--success);"[39m
+          [36m>[39m
+            [0m5[0m
+          [36m</div>[39m
+          [36m<div[39m
+            [33ms...
+ ❯ src/views/Reports.test.jsx (3 tests | 3 failed) 51ms
+   × ReportsView Component > renders reports view and correct scorecard stats 30ms
+     → Unable to find an element with the text: Scorecard (Last 30 Days). This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-reports"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mReports[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm);"[39m
+          [36m>[39m
+            [0mWeekly[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: transparent; color: var(--text-muted); box-shadow: none;"[39m
+          [36m>[39m
+            [0mMonthly[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between card"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px; padding: 12px 16px;"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m15 18-6-6 6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mOct 12 – Oct 18[0m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m9 18 6-6-6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 16px; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm); flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-image"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<rect[39m
+              [33mheight[39m=[32m"18"[39m
+              [33mrx[39m=[32m"2"[39m
+              [33mry[39m=[32m"2"[39m
+              [33mwidth[39m=[32m"18"[39m
+              [33mx[39m=[32m"3"[39m
+              [33my[39m=[32m"3"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"9"[39m
+              [33mr[39m=[32m"2"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Visual[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-text-align-start lucide-text lucide-align-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M21 5H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M15 12H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M17 19H3"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Text Log[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [...
+   × ReportsView Component > switches between time ranges 13ms
+     → Unable to find an element with the text: This Month. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-reports"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mReports[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm);"[39m
+          [36m>[39m
+            [0mWeekly[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: transparent; color: var(--text-muted); box-shadow: none;"[39m
+          [36m>[39m
+            [0mMonthly[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between card"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px; padding: 12px 16px;"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m15 18-6-6 6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mOct 12 – Oct 18[0m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m9 18 6-6-6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 16px; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm); flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-image"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<rect[39m
+              [33mheight[39m=[32m"18"[39m
+              [33mrx[39m=[32m"2"[39m
+              [33mry[39m=[32m"2"[39m
+              [33mwidth[39m=[32m"18"[39m
+              [33mx[39m=[32m"3"[39m
+              [33my[39m=[32m"3"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"9"[39m
+              [33mr[39m=[32m"2"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Visual[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-text-align-start lucide-text lucide-align-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M21 5H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M15 12H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M17 19H3"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Text Log[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [...
+   × ReportsView Component > toggles scorecard expanded view 7ms
+     → Unable to find an element with the text: Scorecard (Last 30 Days). This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"view-reports"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mclass[39m=[32m"title"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mReports[0m
+        [36m</h1>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm);"[39m
+          [36m>[39m
+            [0mWeekly[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: transparent; color: var(--text-muted); box-shadow: none;"[39m
+          [36m>[39m
+            [0mMonthly[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex-between card"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px; padding: 12px 16px;"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m15 18-6-6 6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"subtitle"[39m
+          [33mstyle[39m=[32m"margin: 0px;"[39m
+        [36m>[39m
+          [0mOct 12 – Oct 18[0m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"btn-icon"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m9 18 6-6-6-6"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 16px; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm); flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-image"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<rect[39m
+              [33mheight[39m=[32m"18"[39m
+              [33mrx[39m=[32m"2"[39m
+              [33mry[39m=[32m"2"[39m
+              [33mwidth[39m=[32m"18"[39m
+              [33mx[39m=[32m"3"[39m
+              [33my[39m=[32m"3"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"9"[39m
+              [33mr[39m=[32m"2"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Visual[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-text-align-start lucide-text lucide-align-left"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M21 5H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M15 12H3"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M17 19H3"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m Text Log[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+        [...
+ ❯ src/App.test.jsx (2 tests | 1 failed) 61ms
+   × App Component > navigates between tabs 37ms
+     → Unable to find an element with the text: Scorecard (Last 30 Days). This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"app-container"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"content"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"view-reports"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex-between"[39m
+            [33mstyle[39m=[32m"margin-bottom: 16px;"[39m
+          [36m>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"title"[39m
+              [33mstyle[39m=[32m"margin: 0px;"[39m
+            [36m>[39m
+              [0mReports[0m
+            [36m</h1>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: flex; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm);"[39m
+              [36m>[39m
+                [0mWeekly[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mstyle[39m=[32m"padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; background-color: transparent; color: var(--text-muted); box-shadow: none;"[39m
+              [36m>[39m
+                [0mMonthly[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex-between card"[39m
+            [33mstyle[39m=[32m"margin-bottom: 16px; padding: 12px 16px;"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn-icon"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-chevron-left"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"m15 18-6-6 6-6"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</button>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"subtitle"[39m
+              [33mstyle[39m=[32m"margin: 0px;"[39m
+            [36m>[39m
+              [0mSep 28 – Oct 4[0m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn-icon"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-chevron-right"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"24"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"24"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"m9 18 6-6-6-6"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; gap: 8px; margin-bottom: 16px; background-color: var(--neutral-bg); padding: 4px; border-radius: var(--radius);"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: var(--bg-card); color: var(--primary); box-shadow: var(--shadow-sm); flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-image"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"16"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"16"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<rect[39m
+                  [33mheight[39m=[32m"18"[39m
+                  [33mrx[39m=[32m"2"[39m
+                  [33mry[39m=[32m"2"[39m
+                  [33mwidth[39m=[32m"18"[39m
+                  [33mx[39m=[32m"3"[39m
+                  [33my[39m=[32m"3"[39m
+                [36m/>[39m
+                [36m<circle[39m
+                  [33mcx[39m=[32m"9"[39m
+                  [33mcy[39m=[32m"9"[39m
+                  [33mr[39m=[32m"2"[39m
+                [36m/>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+              [0m Visual[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mstyle[39m=[32m"padding: 8px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; background-color: transparent; color: var(--text-muted); box-shadow: none; flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"lucide lucide-text-align-start lucide-text lucide-align-left"[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mheight[39m=[32m"16"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-linecap[39m=[32m"round"[39m
+                [33mstroke-linejoin[39m=[32m"round"[39m
+                [33mstroke-width[39m=[32m"2"[39m
+                [33mstyle[39m=[32m"margin-bottom: -3px; margin-right: 4px;"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [33mwidth[39m=[32m"16"[39m
+                [33mxmlns[39m=...
+
+ Test Files  5 failed | 1 passed (6)
+      Tests  9 failed | 20 passed (29)
+   Start at  13:07:48
+   Duration  709ms (transform 170ms, setup 268ms, collect 1.11s, tests 460ms, environment 863ms, prepare 234ms)
+
