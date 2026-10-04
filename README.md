@@ -1,45 +1,41 @@
-# 📅 Shift & Attendance Tracker
+# 📅 Maid Tracker - User Guide
 
-A beautiful, mobile-first Web App designed to track daily shifts, manage compensations, and generate exportable scorecards for your staff (Maids, Cooks, Cleaners, Nannies, etc). 
+Welcome to Maid Tracker! This is a completely private, mobile-first app designed to track daily shifts, manage compensations, and generate scorecards for your staff (Maids, Cooks, Cleaners, Nannies, etc). 
 
-It is entirely serverless. It uses your browser's local memory for instant interactions, and backs up data privately to your very own Google Sheet using Google Apps Script. 
+Even though you access this app via a web link, **your data is 100% private and never stored on our servers.** Instead, the app acts as a remote control that saves and syncs data directly to your very own, personal Google Sheet!
 
-Because of this architecture, **you can host this app once and share the link with all your colleagues**. When they open the link, they provide their own Google Sheet webhook, meaning everyone's data remains 100% private to them!
+Follow the 3 quick steps below to set up your private database and connect it to your app.
 
 ---
 
 ## 🚀 Features
 
-- **Dynamic Shifts**: Track anything from "Breakfast & Lunch" to "Dinner Only", or "Cooking & Cleaning". The entire UI adapts dynamically.
+- **Dynamic Shifts**: Track anything from "Breakfast & Lunch" to "Dinner Only", or "Cooking & Cleaning". The entire app adapts dynamically to your needs.
 - **Sunday Compensation**: Automatically manages penalties and tracks make-up days.
-- **Reporting Dashboard**: Generate weekly or monthly scorecards with visual pie charts.
-- **WhatsApp Ready**: Export reports as Text Logs or high-quality Images for easy sharing with your staff.
-- **100% Private & Serverless**: All data is routed directly to your personal Google Sheet. No shared databases, no backend maintenance.
-- **PWA Ready**: Installs to your phone's Home Screen as a native app with a custom icon.
+- **Reporting Dashboard**: Generates monthly scorecards with visual pie charts.
+- **100% Private & Serverless**: All data is routed directly to your personal Google Sheet. No one else has access to it.
+- **App Experience**: Installs directly to your phone's Home Screen so it feels like a native iOS/Android app.
 
 ---
 
-## 🛠️ End-to-End Setup Guide
+## 🛠️ Setup Guide
 
-Follow these steps to host your own version of the app and connect it to your private database.
+### Step 1: Create your Private Database (Google Sheets)
+First, we need to create a spreadsheet that only you have access to, where all your data will be stored securely.
 
-### Step 1: Deploy to Vercel (Hosting)
-You need to host the frontend code so you (and your friends) can access it on your phones.
-1. Create a free account on [Vercel](https://vercel.com).
-2. Connect your GitHub account and import this repository.
-3. Vercel will automatically detect it as a **Vite/React** project. Leave all default settings and click **Deploy**.
-4. Once deployed, you will get a live URL (e.g., `https://maid-tracker.vercel.app`). Share this URL with anyone!
-
----
-
-### Step 2: Set up the Database (Google Sheets)
-Every person who uses the app needs to do this step to create their own private database.
-
-1. Go to [Google Sheets](https://sheets.new) and create a new spreadsheet.
-2. Add the following column headers in Row 1 (exactly as written):
-   - `Date` | `Day Name` | `Arrival Time` | `Late` | `Day Status` | `Shift 1` | `Shift 2` | `Shift 3` | `Notes`
-3. Click on **Extensions > Apps Script** in the top menu.
-4. Delete any code there, and paste the following:
+1. Go to [Google Sheets](https://sheets.new) and create a brand new spreadsheet.
+2. Add the following column headers in Row 1 (type them exactly as written):
+   - **Column A:** `Date` 
+   - **Column B:** `Day Name` 
+   - **Column C:** `Arrival Time` 
+   - **Column D:** `Late` 
+   - **Column E:** `Day Status` 
+   - **Column F:** `Breakfast` 
+   - **Column G:** `Lunch` 
+   - **Column H:** `Dinner` 
+   - **Column I:** `Notes`
+3. Click on **Extensions > Apps Script** in the top menu of your Google Sheet.
+4. Delete any code that is already there, and paste the following code block exactly as is:
 
 ```javascript
 function doPost(e) {
@@ -58,7 +54,7 @@ function doPost(e) {
     data.notes || ''
   ];
   
-  // If row exists for this date, update it. Otherwise, append.
+  // If a record already exists for this date, update it. Otherwise, add a new row.
   var dataRange = sheet.getDataRange().getValues();
   var found = false;
   for (var i = 1; i < dataRange.length; i++) {
@@ -114,30 +110,31 @@ function doGet(e) {
 }
 ```
 5. Click **Deploy > New Deployment** in the top right.
-6. Click the gear icon next to "Select type" and choose **Web app**.
-7. Set **Execute as:** `Me` (your email).
-8. Set **Who has access:** `Anyone`.
-9. Click **Deploy**. *(Note: Google will ask you to authorize permissions. Click Advanced > Go to project).*
-10. **Copy the Web App URL** provided at the end.
+6. Click the gear icon ⚙️ next to "Select type" and choose **Web app**.
+7. Under **Execute as:** select `Me` (your email).
+8. Under **Who has access:** select `Anyone`.
+9. Click **Deploy**. *(Note: Google will ask you to authorize permissions. Click "Review Permissions" > choose your account > click "Advanced" at the bottom > click "Go to project" > Allow).*
+10. **Copy the Web App URL** provided to you at the very end.
 
 ---
 
-### Step 3: Connect the App
-Now, tell the app where to send your data!
+### Step 2: Connect the App
+Now that your database is ready, let's link it to the app!
 
-1. Open the Vercel URL on your phone's browser (Safari or Chrome).
+1. Open the App link that was shared with you on your phone's browser (Safari or Chrome).
 2. Tap the **Settings** icon at the bottom right.
-3. Paste the Google Apps Script URL you just copied into the **"Google Sheets Webhook URL"** box.
+3. Paste the Google Apps Script Web App URL you just copied into the **"Google Sheets Webhook URL"** box.
 4. **Customize your Shifts**: Scroll down to the Shift Configuration section. You can enable, rename, and add custom emojis for the exact shifts you want to track (e.g. 🍳 Breakfast, 🍲 Dinner). 
 5. Tap **Save Settings**. 
 
-*(Your app is now fully functional and connected securely to your Google Sheet!)*
+*(Your app is now fully functional and connected securely to your Google Sheet! When you make an entry in the app, it will instantly appear in your Sheet.)*
 
 ---
 
-### Step 4: Install to Home Screen
-For the best experience, install it as a native app:
-- **iPhone (Safari)**: Tap the Share button at the bottom (box with an arrow pointing up) and select **"Add to Home Screen"**.
+### Step 3: Install to Home Screen
+For the best experience, you should install it to your phone so it opens in full-screen like a real app:
+
+- **iPhone (Safari)**: Tap the Share button at the bottom (the square with an arrow pointing up) and select **"Add to Home Screen"**.
 - **Android (Chrome)**: Tap the 3 dots in the top right corner and select **"Add to Home Screen"**.
 
 It will now appear as an app on your phone with a beautiful custom icon. Enjoy!
