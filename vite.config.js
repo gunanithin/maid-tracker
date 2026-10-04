@@ -17,7 +17,7 @@ export default defineConfig({
         branches: 95,
         statements: 100
       },
-      exclude: ['src/main.jsx', 'src/setupTests.js', 'debug.js', 'vite.config.js', 'eslint.config.js', 'dist/**', '**/*.test.js', '**/*.test.jsx']
+      exclude: ['src/main.jsx', 'src/setupTests.js', 'debug.js', 'vite.config.js', 'eslint.config.js', 'playwright.config.js', 'e2e/**', 'dist/**', '**/*.test.js', '**/*.test.jsx']
     }
   }
 })
