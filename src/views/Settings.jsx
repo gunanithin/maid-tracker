@@ -20,6 +20,8 @@ export default function SettingsView() {
   });
 
   const [saved, setSaved] = useState(false);
+  const [syncing, setSyncing] = useState(false);
+  const importRecords = useStore(state => state.importRecords);
 
   const handleChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -46,6 +48,25 @@ export default function SettingsView() {
     updateSettings(formData);
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
+  };
+
+  const handleSync = async () => {
+    if (!formData.googleSheetWebhookUrl) return;
+    setSyncing(true);
+    try {
+      const response = await fetch(formData.googleSheetWebhookUrl, { method: 'GET' });
+      const data = await response.json();
+      if (data && data.records) {
+        importRecords(data.records);
+        alert(`Successfully synced ${data.records.length} records from Google Sheets!`);
+      } else {
+        alert('Sync successful, but no records were found.');
+      }
+    } catch (e) {
+      console.error(e);
+      alert('Sync failed. Please ensure you updated your Apps Script with the doGet function from the README.');
+    }
+    setSyncing(false);
   };
 
   const daysOfWeek = [
@@ -140,7 +161,7 @@ export default function SettingsView() {
 
       <div className="card">
         <div className="subtitle">Data Backup</div>
-        <div className="form-group" style={{ marginBottom: 0 }}>
+        <div className="form-group" style={{ marginBottom: '16px' }}>
           <label className="form-label">Google Sheets Webhook URL</label>
           <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
             Paste your Google Apps Script Web App URL here to automatically sync records.
@@ -153,6 +174,15 @@ export default function SettingsView() {
             onChange={(e) => handleChange('googleSheetWebhookUrl', e.target.value)}
           />
         </div>
+        
+        <button 
+          className="btn btn-outline" 
+          style={{ width: '100%', padding: '10px', fontSize: '0.9rem' }}
+          onClick={handleSync}
+          disabled={syncing || !formData.googleSheetWebhookUrl}
+        >
+          {syncing ? 'Syncing...' : '⬇️ Sync Data from Google Sheets'}
+        </button>
       </div>
 
       <div className="card">

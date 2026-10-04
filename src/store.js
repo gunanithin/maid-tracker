@@ -113,6 +113,29 @@ const useStore = create(
             [dateStr]: newRecord
           }
         };
+      }),
+
+      importRecords: (importedRecordsArray) => set((state) => {
+        const newRecords = { ...state.records };
+        importedRecordsArray.forEach(rec => {
+          if (!rec.date) return;
+          newRecords[rec.date] = {
+             id: rec.date,
+             date: rec.date,
+             arrival_time: rec.arrival_time || '',
+             late: rec.late || false,
+             day_status: rec.day_status || '',
+             breakfast_status: rec.breakfast_status || '',
+             lunch_status: rec.lunch_status || '',
+             dinner_status: rec.dinner_status || '',
+             notes: rec.notes || '',
+             comp_waived: rec.comp_waived || false,
+             sunday_compensation: rec.sunday_compensation || false,
+             approved_leave: rec.approved_leave || false,
+             updated_at: Date.now()
+          };
+        });
+        return { records: newRecords };
       })
     }),
     {

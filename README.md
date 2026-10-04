@@ -52,14 +52,65 @@ function doPost(e) {
     data.arrival_time || '',
     data.late ? 'Yes' : 'No',
     data.day_status || '',
-    data.shift1_status || '',
-    data.shift2_status || '',
-    data.shift3_status || '',
+    data.breakfast_status || '',
+    data.lunch_status || '',
+    data.dinner_status || '',
     data.notes || ''
   ];
   
-  sheet.appendRow(row);
+  // If row exists for this date, update it. Otherwise, append.
+  var dataRange = sheet.getDataRange().getValues();
+  var found = false;
+  for (var i = 1; i < dataRange.length; i++) {
+    var dateVal = dataRange[i][0];
+    var dateStr = "";
+    if (typeof dateVal === 'object') {
+       var y = dateVal.getFullYear();
+       var m = ("0" + (dateVal.getMonth() + 1)).slice(-2);
+       var d = ("0" + dateVal.getDate()).slice(-2);
+       dateStr = y + "-" + m + "-" + d;
+    } else {
+       dateStr = String(dateVal);
+    }
+    
+    if (dateStr === data.date) {
+      sheet.getRange(i + 1, 1, 1, row.length).setValues([row]);
+      found = true;
+      break;
+    }
+  }
+  
+  if (!found) sheet.appendRow(row);
   return ContentService.createTextOutput(JSON.stringify({"status": "success"})).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+  var records = [];
+  
+  for (var i = 1; i < data.length; i++) {
+    var row = data[i];
+    if (!row[0]) continue;
+    
+    var dateVal = row[0];
+    var dateStr = typeof dateVal === 'object' 
+      ? dateVal.getFullYear() + "-" + ("0" + (dateVal.getMonth() + 1)).slice(-2) + "-" + ("0" + dateVal.getDate()).slice(-2)
+      : String(dateVal);
+      
+    records.push({
+      date: dateStr,
+      arrival_time: row[2],
+      late: row[3] === 'Yes',
+      day_status: row[4],
+      breakfast_status: row[5],
+      lunch_status: row[6],
+      dinner_status: row[7],
+      notes: row[8]
+    });
+  }
+  
+  return ContentService.createTextOutput(JSON.stringify({ records: records })).setMimeType(ContentService.MimeType.JSON);
 }
 ```
 5. Click **Deploy > New Deployment** in the top right.
