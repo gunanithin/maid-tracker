@@ -98,6 +98,7 @@ const useStore = create(
             // Fire and forget POST request
             fetch(state.settings.googleSheetWebhookUrl, {
               method: 'POST',
+              mode: 'no-cors',
               redirect: 'follow',
               headers: {
                 'Content-Type': 'text/plain;charset=utf-8',
