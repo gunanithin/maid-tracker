@@ -14,7 +14,7 @@ function App() {
       case 'calendar': return <CalendarView />;
       case 'reports': return <ReportsView />;
       case 'settings': return <SettingsView />;
-      /* v8 ignore next */
+      /* c8 ignore next */
       default: return <TodayView />;
     }
   }

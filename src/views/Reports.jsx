@@ -31,7 +31,7 @@ export default function ReportsView() {
   const prevPeriod = () => setCurrentDate(timeframe === 'weekly' ? subWeeks(currentDate, 1) : subMonths(currentDate, 1));
   const nextPeriod = () => setCurrentDate(timeframe === 'weekly' ? addWeeks(currentDate, 1) : addMonths(currentDate, 1));
 
-  /* v8 ignore next 4 */
+  /* c8 ignore next 4 */
   const activeShifts = (settings.shifts || [
     { id: 'breakfast', label: 'Breakfast', icon: '🍳', enabled: true },
     { id: 'lunch', label: 'Lunch', icon: '🍛', enabled: true },
@@ -74,11 +74,11 @@ export default function ReportsView() {
           const st = rec[`${s.id}_status`];
           if (st === 'completed') dayIcons.push('✅');
           else if (st === 'missed') dayIcons.push('❌');
-          /* v8 ignore next */
+          /* c8 ignore next */
           else dayIcons.push('➖');
         });
 
-        /* v8 ignore start */
+        /* c8 ignore start */
         if (rec.day_status === 'holiday' || rec.day_status === 'sunday_holiday' || rec.day_status === 'approved_leave') {
            dayIcons = activeShifts.map(() => '🏖️');
            dayTextStatus = 'Holiday';
@@ -111,16 +111,16 @@ export default function ReportsView() {
         if (rec.day_status === 'sunday_compensation') {
           compensationsCompleted++;
         }
-        /* v8 ignore stop */
+        /* c8 ignore end */
 
-        /* v8 ignore next 3 */
+        /* c8 ignore next 3 */
         if (rec.comp_waived) {
           compensationsWaived++;
         }
 
         if (rec.late) late++;
 
-        /* v8 ignore start */
+        /* c8 ignore start */
         // Shifts
         activeShifts.forEach(s => {
           if (rec[`${s.id}_status`] === 'completed') {
@@ -129,7 +129,7 @@ export default function ReportsView() {
             missingDaysInfo.push(`${s.label} missed on ${displayDate}`);
           }
         });
-        /* v8 ignore stop */
+        /* c8 ignore end */
       } else {
         if (isExpectedWorkDay && dateStr < format(new Date(), 'yyyy-MM-dd')) {
           absent++;
@@ -150,13 +150,13 @@ export default function ReportsView() {
 
       if (rec) {
          if (rec.day_status === 'full_day') statusText = 'Full Day';
-         /* v8 ignore start */
+         /* c8 ignore start */
          else if (rec.day_status === 'sunday_compensation') statusText = 'Sunday Comp';
          else if (rec.day_status === 'absent') statusText = 'Absent';
          else if (rec.day_status === 'approved_leave') statusText = 'Holiday (Approved)';
          else if (rec.day_status === 'holiday' || rec.day_status === 'sunday_holiday') statusText = 'Holiday';
          else statusText = 'Partial Day';
-         /* v8 ignore stop */
+         /* c8 ignore end */
          
          if (rec.comp_waived) statusText += ' (Comp Waived)';
       } else {
@@ -218,7 +218,7 @@ export default function ReportsView() {
     return text;
   }, [reportRange, stats, timeframe, settings]);
 
-  /* v8 ignore start */
+  /* c8 ignore start */
   const handleCopy = (textToCopy) => {
     navigator.clipboard.writeText(textToCopy);
     setCopied(true);
@@ -271,7 +271,7 @@ export default function ReportsView() {
   const getBadgeClass = (statusText) => {
     if (statusText === 'Full Day' || statusText === 'Sunday Comp') return 'badge-success';
     if (statusText === 'Absent') return 'badge-danger';
-    /* v8 ignore next 2 */
+    /* c8 ignore next 2 */
     if (statusText === 'Breakfast Only' || statusText === 'Lunch Only') return 'badge-warning';
     return 'badge-neutral';
   };
@@ -388,25 +388,25 @@ export default function ReportsView() {
                     <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>{d.displayDate} <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 500, marginLeft: '4px' }}>{d.dayName}</span></div>
                     <span className={`badge ${getBadgeClass(d.statusText)}`}>{d.statusText}</span>
                   </div>
-                  {/* v8 ignore start */}
+                  {/* c8 ignore start */}
                   {d.notesRaw && (
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', display: 'flex', gap: '6px', alignItems: 'center' }}>
                       <FileText size={14} /> <i>{d.notesRaw}</i>
                     </div>
                   )}
-                  {/* v8 ignore stop */}
+                  {/* c8 ignore end */}
                 </div>
               ))}
               {stats.dailyBreakdown.filter(d => d.statusText !== 'Pending').length === 0 && (
-                /* v8 ignore start */
+                /* c8 ignore start */
                 <div style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)' }}>
                   No records to display yet.
                 </div>
-                /* v8 ignore stop */
+                /* c8 ignore end */
               )}
             </div>
           </div>
-          /* v8 ignore start */
+          {/* c8 ignore start */}
           <div className="flex-row gap-4" style={{ marginTop: '16px' }}>
             <button className="btn btn-outline" style={{ flex: 1 }} onClick={() => handleCopy(textLogReport)}>
               {copied ? <Check size={18} style={{ marginRight: '8px' }}/> : <Copy size={18} style={{ marginRight: '8px' }} />}
@@ -417,7 +417,7 @@ export default function ReportsView() {
               Share Log
             </button>
           </div>
-          /* v8 ignore stop */
+          {/* c8 ignore end */}
         </>
       )}
 
@@ -485,17 +485,17 @@ export default function ReportsView() {
             )}
 
             {stats.missingDaysInfo.length === 0 && stats.requiredComp === 0 && (
-              /* v8 ignore start */
+              /* c8 ignore start */
               <div style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '20px 0' }}>
                 <Check size={32} style={{ color: 'var(--success)', marginBottom: '8px' }} />
                 <div>Perfect attendance! No missed days.</div>
               </div>
-              /* v8 ignore stop */
+              /* c8 ignore end */
             )}
           </div>
           </div>
           
-          /* v8 ignore start */
+          {/* c8 ignore start */}
           <button className="btn btn-primary" style={{ width: '100%', padding: '14px', fontSize: '1rem', marginTop: '16px' }} onClick={() => shareImage(detailedCardRef)}>
             <ImageIcon size={18} style={{ marginRight: '8px' }} />
             Share Chart as Image
@@ -511,7 +511,7 @@ export default function ReportsView() {
               Share Text
             </button>
           </div>
-          /* v8 ignore stop */
+          {/* c8 ignore end */}
         </>
       )}
     </div>

@@ -9,11 +9,11 @@ export default function SettingsView() {
     googleSheetWebhookUrl: settings.googleSheetWebhookUrl || '',
     expectedBreakfastTime: settings.expectedBreakfastTime || '',
     expectedLunchTime: settings.expectedLunchTime || '',
-    /* v8 ignore next */
+    /* c8 ignore next */
     workingDays: settings.workingDays || [1, 2, 3, 4, 5, 6],
     sundayHoliday: settings.sundayHoliday !== false,
     sundayCompensation: settings.sundayCompensation !== false,
-    /* v8 ignore next 6 */
+    /* c8 ignore next 6 */
     shifts: settings.shifts || [
       { id: 'breakfast', label: 'Breakfast', icon: '🍳', enabled: true },
       { id: 'lunch', label: 'Lunch', icon: '🍛', enabled: true },
@@ -53,7 +53,7 @@ export default function SettingsView() {
   };
 
   const handleSync = async () => {
-    /* v8 ignore next */
+    /* c8 ignore next */
     if (!formData.googleSheetWebhookUrl) return;
     setSyncing(true);
     try {

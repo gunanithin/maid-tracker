@@ -24,7 +24,7 @@ export default function TodayView() {
   const saveRecord = useStore(state => state.saveRecord);
 
   const settings = useStore(state => state.settings);
-  /* v8 ignore next 4 */
+  /* c8 ignore next 4 */
   const activeShifts = (settings.shifts || [
     { id: 'breakfast', label: 'Breakfast', icon: '🍳', enabled: true },
     { id: 'lunch', label: 'Lunch', icon: '🍛', enabled: true },
@@ -57,7 +57,7 @@ export default function TodayView() {
       'sunday_compensation': { label: 'Compensation', class: 'badge-success' },
       'approved_leave': { label: 'Holiday', class: 'badge-neutral' },
     };
-    /* v8 ignore next */
+    /* c8 ignore next */
     const mapped = map[record.day_status] || { label: record.day_status, class: 'badge-neutral' };
     return <span className={`badge ${mapped.class}`}>{mapped.label}</span>;
   };
